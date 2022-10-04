@@ -1,0 +1,44 @@
+.assets {
+  margin-top: 30px;
+  margin-bottom: 94px;
+  display: flex;
+  padding: 0 15px 0 15px;
+
+  &__header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-main);
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--color-contact);
+  }
+}
+
+.assets-icons {
+  display: flex;
+  justify-content: center;
+
+  &__box {
+    width: 270px;
+    height: 120px;
+    left: 215px;
+    top: 774px;
+    background: var(--color-bg-section);
+    border-radius: 4px;
+  }
+
+  &__svg {
+    padding: 25px 100px 25px 100px;
+  }
+}

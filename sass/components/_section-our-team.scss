@@ -1,0 +1,72 @@
+.our-team {
+  background: var(--color-bg-section);
+
+  &__header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-main);
+    margin-bottom: 50px;
+  }
+
+  &__name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--color-main);
+  }
+
+  &__position {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--color-contact);
+    margin-top: 10px;
+    white-space: nowrap;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    background: var(--color-white);
+    width: 270px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  &__employee {
+    padding: 30px;
+    text-align: center;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16px;
+    gap: 10px;
+  }
+
+  &__icon {
+    display: flex;
+    border-radius: 50%;
+    fill: var(--color-social);
+    padding: 8px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-color: var(--color-social-icon);
+      fill: var(--color-white);
+    }
+  }
+}

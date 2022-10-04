@@ -1,0 +1,107 @@
+.header {
+  margin: 0;
+
+  .container {
+    display: flex;
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
+    width: 1200px;
+    height: 80px;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__top-logo {
+    font-family: var(--font-raleway);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    color: var(--color-black);
+
+    &--color {
+      color: var(--color-logo);
+    }
+  }
+}
+
+.nav {
+  &__menu {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    padding-left: 93px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--color-main);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      color: var(--color-logo);
+    }
+
+    &--active {
+      &::after {
+        position: relative;
+        top: 31px;
+        display: block;
+        content: "";
+        width: 58px;
+        height: 4px;
+        background-color: var(--color-logo);
+        border-radius: 2px;
+      }
+    }
+  }
+}
+
+.head-ctc {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 2;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  &__link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #757575;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__svg {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    fill: #757575;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__contact {
+    &:hover {
+      .head-ctc__link,
+      .head-ctc__svg {
+        color: var(--color-logo);
+        fill: var(--color-logo);
+      }
+    }
+  }
+}

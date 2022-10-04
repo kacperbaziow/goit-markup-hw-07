@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--color-bg-main);
+  background-color: var(--color-white);
+  font-family: var(--font-roboto), var(--font-raleway), var(--font-sansserif);
+}
+
+ul {
+  list-style-type: none;
+  gap: 30px;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}

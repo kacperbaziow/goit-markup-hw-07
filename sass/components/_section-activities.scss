@@ -1,0 +1,39 @@
+.activities-header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-main);
+  margin-bottom: 50px;
+}
+
+.activities {
+  display: flex;
+  justify-content: center;
+
+  &__img {
+    position: relative;
+  }
+
+  &__img-header {
+    position: absolute;
+    bottom: 3px;
+    width: 370px;
+    height: 70px;
+    background-color: var(--color-activities);
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    padding: 27px 90px;
+    color: var(--color-white);
+  }
+}
